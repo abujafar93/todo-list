@@ -1,5 +1,5 @@
 body{
-  background: #4b1e3d;
+  background: #794718;
 }
 
 .container {
@@ -9,12 +9,12 @@ body{
 input[type=text], input[type=text]:focus{
   color: #fff;
   border: none;
-  background: rgba(122, 68, 101, 0.2);
+  background: #502c0a;
   max-width: 400px;
 }
 
 .myTodo li{
-  background-color: #612b55;
+  background-color: #8f5620;
 }
 
 .delete {
