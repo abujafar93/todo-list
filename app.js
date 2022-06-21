@@ -20,7 +20,6 @@ addForm.addEventListener('submit', e => {
   e.preventDefault();
 
   const todo = addForm.addTodo.value.trim();
-  console.log(todo)
 
   if(todo.length){
     generateTemplate(todo);
@@ -39,7 +38,7 @@ list.addEventListener('click', e => {
 // keyup event
 const filterTodos = (term) => {
   Array.from(list.children)
-    .filter((todo) => todo.textContent.includes(term))  
+    .filter((todo) => !todo.textContent.includes(term))  
     .forEach((todo) => todo.classList.add('filtered'));
 
     Array.from(list.children)
